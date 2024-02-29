@@ -17,6 +17,7 @@ h2 {
 .established {
   font-style: italic;
 }
+/* .______ allows CSS styling on classes */
 
 h1, h2, p {
   text-align: center;
@@ -25,27 +26,29 @@ h1, h2, p {
 .menu {
   width: 80%;
   background-color: burlywood;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto; /* places to far right*/
+  margin-right: auto; /* places to far left*/
+  /* margin left/right centers the menu page. Can also just done margin: auto */
   padding: 20px;
-  max-width: 500px;
+  max-width: 500px; /* when full window, max will be 500 px, but will shrink and adjust when the window is smaller*/
 }
 
 img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -25px
+  margin: auto;
+  margin-top: -20px
+  /* negative pixels to minimize the space on words and picture*/
 }
 
 hr {
-  height: 2px;
+  height: 2px; /*make the line thicker*/
   background-color: brown;
   border-color: brown;
-}
+} 
+/*hr = lines on html page*/
 
 .bottom-line {
-  margin-top: 25px;
+  margin-top: 25px; /*have more space between line and dessert menu*/
 }
 
 h1, h2 {
@@ -53,20 +56,21 @@ h1, h2 {
 }
 
 .item p {
-  display: inline-block;
-  margin-top: 5px;
+  display: inline-block; /* allows both price and item to be in same line */
+  margin-top: 5px; 
   margin-bottom: 5px;
+  /* add space between listed items*/
   font-size: 18px;
 }
 
 .flavor, .dessert {
-  text-align: left;
-  width: 75%;
+  text-align: left; /*text moved to far left*/
+  width: 75%; /* flavor and dessert take up 75% of the line, think of a imaginary split between items and price, 75%/25% */
 }
 
 .price {
-  text-align: right;
-  width: 25%;
+  text-align: right; /*text moved to far right*/
+  width: 25%; 
 }
 
 /* FOOTER */
@@ -79,18 +83,18 @@ footer {
   margin-bottom: 5px;
 }
 
-a {
+a { /*the link color when shown on page*/
   color: black;
 }
 
-a:visited {
+a:visited { /*the link color when page is clicked and visited*/
   color: black;
 }
 
-a:hover {
+a:hover { /*the link color when pointer hovers the link*/
   color: brown;
 }
 
-a:active {
-  color: brown;
+a:active { /*the link color when clicked but not released*/
+  color: white;
 }
