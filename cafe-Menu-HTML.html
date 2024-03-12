@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cafe Menu</title>
-    <link href="cafe-Menu-CSS.css" rel="stylesheet"/>
+    <link href="cafe-Menu-CSS.css" rel="stylesheet"/> <!--link connects local files-->
+    <!--"rel" specifies the relationship between the current document and the linked document (CSS means Cascading "StyleSheet")-->
   </head>
   <body>
     <div class="menu">
@@ -12,10 +13,11 @@
         <h1>CAMPER CAFE</h1>
         <p class="established">Est. 2020</p>
         <hr>
-        <section>
+        <section> <!--"section" is for grouping thematically related content-->
           <h2>Coffee</h2>
           <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
-          <article class="item"> <!--all items have a class of item to allow all CSS changes to be the same with all items-->
+          <article class="item"> <!-- article is used for standalone content-->
+            <!--all items have a class of item to allow all CSS changes to be the same with all items-->
             <p class="flavor">French Vanilla</p><p class="price">3.00</p> <!--the paragraph elements are in the same line so it is the same line on the site-->
           </article>
           <article class="item">
@@ -34,6 +36,7 @@
         <section>
           <h2>Desserts</h2>
           <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon"/>
+          <!-- src is a resource to be added/loaded to the page as in images or javascript-->
           <article class="item">
             <p class="dessert">Donut</p><p class="price">1.50</p>
           </article>
